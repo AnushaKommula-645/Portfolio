@@ -4,10 +4,11 @@ import styles from './Contact.module.css';
 
 function Contact() {
     const [isSending, setisSending] = useState(false);
-    
+        
     const handleSubmit = async (e) => {
         e.preventDefault();
         setisSending(true);
+
         const formData = {
             name: e.target.name.value,
             mail: e.target.mail.value,
@@ -15,7 +16,7 @@ function Contact() {
         };
 
         try {
-            const response = await fetch("/contact", {
+            const response = await fetch("https://portfolio-backend-jid9.onrender.com/contact", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -26,11 +27,13 @@ function Contact() {
             const text = await response.text();
             alert(text);
             e.target.reset();
-            setisSending(false) ;
+            setisSending(false);
         } catch (error) {
             alert("Something went wrong. Please try again.");
+            setisSending(false);
         }
     };
+
 
     return (
         <div id="contact" className={styles.container}>
@@ -51,13 +54,13 @@ function Contact() {
                     </a>
                 </div>
             </div>            
-            {/* <form onSubmit={handleSubmit}> 
+            <form onSubmit={handleSubmit}> 
                 <h3 className={styles.msg}>Leave a message here</h3>
                 <input type="text" name="name" placeholder="Your name" required />
                 <input type="email" name="mail" placeholder="Your email" required />
                 <textarea name="msg" placeholder="Your message" required />
                 <button type="submit" disabled={isSending}>{isSending ? 'Sending..' : 'Submit'}</button>
-            </form> */}
+            </form>
         </div>
     );
 }
