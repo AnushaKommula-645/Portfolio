@@ -1,0 +1,26 @@
+.footer {
+    background: #1f1f1f;
+    padding: 10px;
+    text-align: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.links {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 10px 0;
+    gap: 1.6rem;
+}
+
+.links a {
+    color: white;
+    font-size: 20px;
+}
+
+.links a:hover {
+  color: #b688fc;
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
