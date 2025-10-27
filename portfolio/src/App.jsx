@@ -5,7 +5,8 @@ import Projects from './components/Projects.jsx'
 import Dsa from './components/Dsa.jsx'
 import Contact from './components/Contact.jsx'
 import Footer from './components/Footer.jsx'
-
+import Achievements from './components/Achievements.jsx';
+// import Experience from './components/Experience.jsx'
 
 function App() {
   return(
@@ -14,7 +15,9 @@ function App() {
       <Home />
       <Skills />
       <Projects />
+      {/* <Experience /> */}
       <Dsa />
+      <Achievements />
       <Contact />
       <Footer />
     </div>

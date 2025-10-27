@@ -1,0 +1,105 @@
+.background {
+  background: black;
+  padding: 10px;
+  text-align: center;
+  min-height: 80vh;
+  margin: 0 auto;
+}
+
+.background h1 {
+  color: white;
+  font-size: 3rem;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80vw;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  width: 320px;
+  padding: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+.iconWrapper {
+  background: linear-gradient(to right, #7b74ff, #b688fc);
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 15px auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+  color: white;
+  font-size: 2rem;
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #4b0082;
+  margin-bottom: 10px;
+}
+
+.desc {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.4;
+}
+
+/* ✅ Responsive styling */
+@media (max-width: 768px) {
+  .background h1 {
+    font-size: 2.2rem;
+  }
+
+  .container {
+    width: 95vw;
+    gap: 1.5rem;
+  }
+
+  .card {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .iconWrapper {
+    width: 60px;
+    height: 60px;
+  }
+
+  .icon {
+    font-size: 1.7rem;
+  }
+
+  .title {
+    font-size: 1.1rem;
+  }
+
+  .desc {
+    font-size: 0.95rem;
+  }
+}

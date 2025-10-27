@@ -1,0 +1,110 @@
+h1 {
+  color: #b688fc;
+  font-size: 3rem;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 1rem;
+  margin: 40px auto;
+}
+
+.expContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 1px solid #4340ff;
+  border-radius: 10px;
+  color: black;
+  width: 700px;
+  padding: 20px;
+  box-shadow: 2px 2px 8px 2px #716ff7;
+  transition: transform 0.2s ease-in-out;
+}
+
+.expContainer:hover {
+  transform: scale(1.03);
+}
+
+.expHeader {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 10px;
+  border: 2px solid #716ff7;
+  padding: 5px;
+}
+
+.company {
+  font-size: 1.3rem;
+  color: #4b0082;
+  margin: 0;
+}
+
+.role {
+  font-size: 1rem;
+  color: #333;
+  margin: 4px 0;
+  font-weight: bold;
+}
+
+.duration {
+  font-size: 0.9rem;
+  color: #555;
+  font-style: italic;
+}
+
+.descList {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.descList li {
+  text-align: left;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+
+/* ✅ Responsive styling */
+@media (max-width: 768px) {
+  .expContainer {
+    width: 90%;
+    margin: 10px auto;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .company {
+    font-size: 1.2rem;
+  }
+
+  .role {
+    font-size: 0.95rem;
+  }
+
+  .duration {
+    font-size: 0.85rem;
+  }
+
+  .descList li {
+    font-size: 0.9rem;
+  }
+}

@@ -9,7 +9,7 @@ function Home() {
                 <section >
                     <p className={styles.hello}><i>Hello...</i></p>
                     <h1 className={styles.name}>I'm <span className={styles.gradientText}>Anusha Kommula</span></h1>
-                    <p className={styles.skill}>Full-Stack Developer & Programmer</p>
+                    <p className={styles.skill}>Aspiring Full-Stack Developer | Passionate Programmer</p>
                     <p className={styles.about}>I thrive on building elegant digital solutions that connect design with functionality. My focus lies in crafting seamless interfaces and efficient logic that enhance user engagement across devices. Energized by challenges and emerging tools, I continuously refine my skills to deliver meaningful and high-quality web experiences.</p>
                 </section>
                 <aside>
