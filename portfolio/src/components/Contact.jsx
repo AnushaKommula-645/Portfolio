@@ -16,8 +16,8 @@ function Contact() {
         };
 
         try {
-            // http://localhost:5000/contact
-            const response = await fetch("http://localhost:5000/contact", {
+            
+            const response = await fetch("https://portfolio-backend-jid9.onrender.com/contact", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
