@@ -34,7 +34,8 @@ function Projects() {
             name: "Rent Ease", tech: ["ReactNative", "Node", "Express", "MongoDB"],
             desc: "Rent ease is an app that allows users to post their property for rent and can search for houses, shops, lands and parking slots",
             link: "https://github.com/AnushaKommula-645/RentEaseApp.git",
-            live: ""
+            live: "",
+            demo: "https://drive.google.com/file/d/1anKEVZmhD4nyijdlpyMNt0C0RZw-Dzkn/view?usp=sharing"
         }, 
         {
             img: svecwImg,
@@ -48,7 +49,8 @@ function Projects() {
             name: "Semester Text", tech:["HTML", "CSS", "PHP", "MySQL"],
             desc: "Semester Text is a web application for students to upload their notes and can view and download notes from it.",
             link: "https://github.com/AnushaKommula-645/Semester-Text.git",
-            live: ""
+            live: "",
+            demo: "https://drive.google.com/file/d/17x_72poAVwXRFmM3nqfR0Zqkb-0Ojhsp/view?usp=sharing"
         }
     ];
 
@@ -73,6 +75,10 @@ function Projects() {
                 
                 {x.live && x.live.length > 0 ? (
                     <a href={x.live} target="_blank" rel="noopener noreferrer" className={styles.liveBtn}>Live</a>
+
+                ) : null}
+                {x.demo && x.demo.length > 0 ? (
+                    <a href={x.demo} target="_blank" rel="noopener noreferrer" className={styles.liveBtn}>Demo</a>
 
                 ) : null}
             </div>
