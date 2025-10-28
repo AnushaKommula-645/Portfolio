@@ -16,22 +16,22 @@ function Achievements() {
         {
             icon: <FaAndroid className={styles.icon} />,
             title: "Co-Lead - Android Development, GDG SVECW",
-            description: "Led Android initiatives under Google Developer Group SVECW and mentored juniors."
+            description: "Co-led Android initiatives under Google Developer Group SVECW and mentored juniors."
         },
         {
             icon: <FaMedal className={styles.icon} />,
             title: "Finalist - Prajwalan National Hackathon",
-            description: "Reached the final round among 130+ teams for developing an AI-based educational project."
+            description: "Reached the final round among 130+ teams for developing an Home Services app."
         },
         {
             icon: <FaGoogle className={styles.icon} />,
             title: "Google STEP Internship – Final Round",
-            description: "Advanced to the final interview round of Google’s STEP Internship 2025, demonstrating strong problem-solving and coding skills."
+            description: "Advanced to the final interview round of Google’s STEP Internship 2024, demonstrating strong problem-solving and coding skills."
         },
         {
             icon: <FaUsers className={styles.icon} />,
             title: "Student Coordinator - The Hindu Future India Club",
-            description: "Organized and managed student activities promoting leadership and innovation."
+            description: "Contributed to The campus club in promoting general knowledge through events, posters, and social media engagement."
         },
         {
             icon: <FaCode className={styles.icon} />,
