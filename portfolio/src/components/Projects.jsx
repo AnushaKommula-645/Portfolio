@@ -10,7 +10,7 @@ function Projects() {
     const project = [
         {
             img: IQruit,
-            name: "EduTutor AI", tech: ["MERN Stack"],
+            name: "IQruit AI", tech: ["MERN Stack"],
             desc: "a full-stack Interview Preparation platform for OS, CN, and DBMS, attracting 100+ users and improving test prep efficiency by 40% through an integrated chatbot",
             link: "https://github.com/MADHURYA-3030/IQruit.git",
             live: "https://iqruit.netlify.app/"
