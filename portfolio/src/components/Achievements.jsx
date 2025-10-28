@@ -1,17 +1,22 @@
-import { FaAmazon, FaTrophy, FaMedal, FaAndroid, FaUsers, FaCode } from "react-icons/fa";
+import { FaAmazon, FaTrophy, FaMedal, FaAndroid, FaUsers, FaCode, FaGoogle } from "react-icons/fa";
 import styles from "./Achievements.module.css";
 
 function Achievements() {
     const achievements = [
+        {
+            icon: <FaTrophy className={styles.icon} />,
+            title: "Winner - Medhamanthan Hackathon (VEDA 2K25)",
+            description: "Won first place competing against 75+ teams by developing an innovative project solution."
+        },
         {
             icon: <FaAmazon className={styles.icon} />,
             title: "Amazon ML Summer School 2025",
             description: "Selected among 60,000+ applicants for Amazon Machine Learning Summer School 2025."
         },
         {
-            icon: <FaTrophy className={styles.icon} />,
-            title: "Winner - Medhamanthan Hackathon (VEDA 2K25)",
-            description: "Won first place competing against 75+ teams by developing an innovative project solution."
+            icon: <FaAndroid className={styles.icon} />,
+            title: "Co-Lead - Android Development, GDG SVECW",
+            description: "Led Android initiatives under Google Developer Group SVECW and mentored juniors."
         },
         {
             icon: <FaMedal className={styles.icon} />,
@@ -19,9 +24,9 @@ function Achievements() {
             description: "Reached the final round among 130+ teams for developing an AI-based educational project."
         },
         {
-            icon: <FaAndroid className={styles.icon} />,
-            title: "Co-Lead - Android Development, GDG SVECW",
-            description: "Led Android initiatives under Google Developer Group SVECW and mentored juniors."
+            icon: <FaGoogle className={styles.icon} />,
+            title: "Google STEP Internship – Final Round",
+            description: "Advanced to the final interview round of Google’s STEP Internship 2025, demonstrating strong problem-solving and coding skills."
         },
         {
             icon: <FaUsers className={styles.icon} />,
