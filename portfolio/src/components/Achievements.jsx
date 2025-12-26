@@ -36,7 +36,7 @@ function Achievements() {
         {
             icon: <FaCode className={styles.icon} />,
             title: "LeetCode & HackerRank Achievements",
-            description: "Solved 250+ LeetCode problems and achieved 5★ in Problem Solving on HackerRank."
+            description: "Solved 300+ LeetCode problems and achieved 5★ in Problem Solving on HackerRank."
         }
     ];
 
