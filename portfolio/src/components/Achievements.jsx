@@ -1,8 +1,13 @@
-import { FaAmazon, FaTrophy, FaMedal, FaAndroid, FaUsers, FaCode, FaGoogle } from "react-icons/fa";
+import { FaAmazon, FaTrophy, FaMedal, FaAndroid, FaUsers, FaCode, FaGoogle  } from "react-icons/fa";
 import styles from "./Achievements.module.css";
 
 function Achievements() {
     const achievements = [
+        {
+            icon: <FaUsers   className={styles.icon} />,
+            title: "Selected as Mentee - CodesCafe",
+            description: "Selected as a mentee for the Codess.Cafe Mentorship Program from 2000+ applicants."
+        },
         {
             icon: <FaTrophy className={styles.icon} />,
             title: "Winner - Medhamanthan Hackathon (VEDA 2K25)",
@@ -37,7 +42,7 @@ function Achievements() {
             icon: <FaCode className={styles.icon} />,
             title: "LeetCode & HackerRank Achievements",
             description: "Solved 350+ LeetCode problems and achieved 5★ in Problem Solving on HackerRank."
-        }
+        },
     ];
 
     return (
